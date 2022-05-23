@@ -30,6 +30,24 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+button {
+  cursor: pointer;
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -37,7 +55,18 @@ body {
   font-style: normal;
   color: var(--primary-text-color);
 }
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid orangered;
+}
 /* ----------------HEADER------------------- */
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -74,7 +103,9 @@ body {
 /* ----------------HERO------------------- */
 .hero {
   background-color: var(--primary-background-color);
+  padding: 200px 0;
 }
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -83,6 +114,9 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background-color);
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 696px;
 }
 .hero-btn {
   font-family: inherit;
@@ -93,6 +127,11 @@ body {
   letter-spacing: 0.06em;
   background-color: var(--accent-text-color);
   color: var(--background-color);
+  display: block;
+  border: none;
+  max-width: 200;
+  margin: 0 auto;
+  padding: 10px auto;
 }
 .hero-btn:hover,
 .hero-btn:focus {
