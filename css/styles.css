@@ -1,0 +1,189 @@
+:root {
+  --primary-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --secondary-text-color: #757575;
+  --primary-background-color: #2f303a;
+  --background-color: #ffffff;
+  --accent-btn-text-color: #000000;
+  --accent-btn-background-color: #188ce8;
+  --team-background-color: #f5f4fa;
+  --contact-color: rgba(255, 255, 255, 0.6);
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.list {
+  list-style-type: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  color: var(--primary-text-color);
+}
+/* ----------------HEADER------------------- */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-text-color);
+  cursor: pointer;
+}
+
+.header-logo-text {
+  color: var(--accent-btn-text-color);
+}
+.header-nav-link,
+.header-contact-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.header-contact-link {
+  color: var(--secondary-text-color);
+}
+.current,
+.logo,
+.header-nav-link:hover,
+.header-nav-link:focus,
+.header-contact-link:hover,
+.header-contact-link:focus,
+.address-item-link:hover,
+.address-item-link:focus {
+  color: var(--accent-text-color);
+}
+
+/* ----------------HERO------------------- */
+.hero {
+  background-color: var(--primary-background-color);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--background-color);
+}
+.hero-btn {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-text-color);
+  color: var(--background-color);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--accent-btn-background-color);
+}
+/* ----------------Tasks------------------- */
+
+.tasks-item-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.tasks-item-text {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+/* ----------------Portfolio------------------- */
+.section-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* ----------------Team------------------- */
+.team {
+  background-color: var(--team-background-color);
+}
+.team-list-item {
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: var(--background-color);
+}
+
+.team-item-title {
+  font-weight: 500;
+  font-size: 16px;
+}
+.team-item-text {
+  font-size: 16px;
+  color: var(--secondary-text-color);
+}
+/* ----------------Footer------------------- */
+.footer {
+  background-color: var(--primary-background-color);
+}
+
+.footer-logo-tekst {
+  color: var(--background-color);
+}
+
+.address-item-link {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--contact-color);
+}
+.address {
+  color: var(--background-color);
+}
+/* ------------------------------PORTFOLIO---------------------------------- */
+
+.portfolio-filter {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: var(--team-background-color);
+  cursor: pointer;
+}
+.current-filter,
+.portfolio-filter:hover,
+.portfolio-filter:focus {
+  color: var(--background-color);
+  background-color: var(--accent-text-color);
+}
+.portfolio-item-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+.portfolio-item-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
