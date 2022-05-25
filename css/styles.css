@@ -295,7 +295,9 @@ body {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   width: 370px;
-  text-align: center;
+  text-align: start;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .current-filter,
@@ -315,4 +317,11 @@ body {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+
+.portfolio-item-title,
+.portfolio-item-text {
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 322px;
 }
