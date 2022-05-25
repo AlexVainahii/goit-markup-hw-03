@@ -10,14 +10,6 @@
   --contact-color: rgba(255, 255, 255, 0.6);
 }
 
-.link {
-  text-decoration: none;
-  color: inherit;
-}
-.list {
-  list-style-type: none;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -30,18 +22,10 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
 
 ul,
 ol {
+  list-style-type: none;
   margin: 0;
   padding-left: 0;
 }
@@ -55,18 +39,38 @@ body {
   font-style: normal;
   color: var(--primary-text-color);
 }
+.section {
+  padding-top: 47px;
+  padding-bottom: 47px;
+  outline: 1px dashed green;
+  background-color: transparent;
+}
 .container {
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
   outline: 1px solid orangered;
+  background-color: greenyellow;
 }
 /* ----------------HEADER------------------- */
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
 }
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+}
+
+.contact-list {
+  display: flex;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -80,30 +84,31 @@ body {
 .header-logo-text {
   color: var(--accent-btn-text-color);
 }
-.header-nav-link,
-.header-contact-link {
+.nav-link,
+.contact-link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.header-contact-link {
+.contact-link {
   color: var(--secondary-text-color);
 }
 .current,
 .logo,
-.header-nav-link:hover,
-.header-nav-link:focus,
-.header-contact-link:hover,
-.header-contact-link:focus,
-.address-item-link:hover,
-.address-item-link:focus {
+.nav-link:hover,
+.nav-link:focus,
+.contact-link:hover,
+.contact-link:focus,
+.address-link:hover,
+.address-link:focus {
   color: var(--accent-text-color);
 }
 
 /* ----------------HERO------------------- */
 .hero {
   background-color: var(--primary-background-color);
-  padding: 200px 0;
+  padding-bottom: 200px;
+  padding-top: 200px;
 }
 
 .hero-title {
@@ -138,12 +143,23 @@ body {
   background-color: var(--accent-btn-background-color);
 }
 /* ----------------Tasks------------------- */
+.tasks-list {
+  display: flex;
+}
+.tasks-item {
+  width: 270px;
+  text-align: left;
+}
+.tasks-item + .tasks-item {
+  margin-left: 30px;
+}
 
 .tasks-item-title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10;
 }
 .tasks-item-text {
   line-height: 1.71;
@@ -185,7 +201,7 @@ body {
   color: var(--background-color);
 }
 
-.address-item-link {
+.address-link {
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;
