@@ -93,7 +93,7 @@ body {
 }
 
 .logo {
-  max-width: 145;
+  max-width: 145px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -151,13 +151,17 @@ body {
 .hero-btn {
   display: block;
   border: none;
-  max-width: 200;
+
   margin: 0 auto;
-  padding: 10px auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 32px;
+  padding-left: 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: transparent;
 
+  white-space: nowrap;
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
@@ -229,7 +233,7 @@ body {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   padding-bottom: 30px;
-  max-width: 270;
+  max-width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
