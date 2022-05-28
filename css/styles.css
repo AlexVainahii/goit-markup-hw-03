@@ -56,11 +56,12 @@ body {
   background-color: greenyellow; */
 }
 /* ----------------HEADER------------------- */
-.header {
-}
+
 .header .container {
   display: flex;
   align-items: center;
+}
+.header {
   border-bottom: 1px solid var(--border-bottom-color);
 }
 
@@ -228,7 +229,7 @@ body {
 .team-item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
-  padding-bottom: 30px;
+
   max-width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -240,8 +241,6 @@ body {
   background-color: var(--background-color);
 }
 .team-item-title {
-  margin-top: 30px;
-
   font-weight: 500;
   font-size: 16px;
 }
@@ -250,6 +249,10 @@ body {
 
   font-size: 16px;
   color: var(--secondary-text-color);
+}
+.report {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 /* ----------------Footer------------------- */
 .footer {
@@ -262,12 +265,6 @@ body {
   color: var(--background-color);
 }
 
-.address {
-  margin-top: 20px;
-  max-width: 231px;
-  text-align: left;
-  color: var(--background-color);
-}
 .address-item + .address-item {
   margin-top: 9px;
 }
@@ -277,6 +274,12 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--contact-color);
+}
+.address {
+  margin-top: 20px;
+  max-width: 231px;
+  text-align: left;
+  color: var(--background-color);
 }
 
 /* ------------------------------PORTFOLIO---------------------------------- */
@@ -320,7 +323,12 @@ body {
   text-align: start;
 }
 
-.card-bottom {
+.portfolio-project-item,
+.report {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
   border-right: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color);
@@ -336,29 +344,19 @@ body {
   background-color: var(--accent-text-color);
 }
 .portfolio-item-title {
-  display: block;
-  padding-top: 20px;
-
   white-space: nowrap;
+  margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
 }
+
 .portfolio-item-text {
   display: block;
-  margin-top: 4px;
-  margin-bottom: 20px;
 
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-}
-
-.portfolio-item-title,
-.portfolio-item-text {
-  margin-left: 24px;
-  margin-right: 24px;
-  width: 322px;
 }
