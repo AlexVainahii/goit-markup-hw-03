@@ -130,7 +130,7 @@ body {
 .hero {
   padding-bottom: 200px;
   padding-top: 200px;
-
+  text-align: center;
   background-color: var(--primary-background-color);
 }
 
@@ -142,17 +142,15 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background-color);
 }
 
 .hero-btn {
-  display: block;
   border: none;
 
-  margin: 0 auto;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 32px;
